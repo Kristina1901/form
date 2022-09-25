@@ -1,0 +1,207 @@
+@use 'carbon-components-react';
+@use '@carbon/react';
+
+
+// Preferred: bring in the styles for one component
+@use 'carbon-components-react/scss/components/button';
+.App {
+  text-align: center;
+}
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.text {
+  border-radius: 5px;
+}
+.button {
+  position: relative;
+  bottom: 82px;
+  left: 195px;
+  border: none;
+  border-radius: 50px;
+  background-color: gray;
+  color: white;
+  width: 17px;
+  height: 17px;
+ 
+
+}
+.tooltipe {
+    visibility: hidden;
+    background: rgba(0, 0, 0, 0.87);
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+    padding: 3px 16px;
+    border-radius: 4px;
+    position: absolute;
+    z-index: 1;
+    bottom: 80px;
+    left: 220px;
+}
+.button:hover + .tooltipe {
+  visibility: visible;
+}
+.tooltipContainer {
+  position: relative;
+}
+.timeFrameContainer {
+  display: flex;
+  justify-content: flex-start
+}
+.item {
+  padding: 10px;
+}
+.cds--select-input__wrapper {
+  width: 150px;
+}
+.cds--form-item {
+ flex: none
+}
+.notSet {
+  margin-top: 5px;
+  color: skyblue;
+}
+.cds--select-input:hover {
+  outline: 1px skyblue solid;
+}
+.cds--select-input:focus {
+  outline: 1px skyblue solid;
+}
+.textContainer {
+  flex-grow: 0.5;
+}
+.metcricsContainer {
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 10px;
+ 
+}
+.start {
+  border: 1px solid gray;
+  padding: 10px;
+  border-right: none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.numberContainer {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.startNumber {
+  border: 1px solid gray;
+  padding: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  margin-right: 10px;
+  
+}
+.target {
+  border: 1px solid gray;
+  padding: 10px;
+  border-right: none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  margin-left: 10px;
+}
+.lastNumber {
+  border: 1px solid gray;
+  padding: 10px;
+  padding-right: 15px;
+  padding-left: 15px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  margin-right: 10px;
+}
+.percentage {
+  border: 1px solid gray;
+  padding: 10px;
+  border-radius: 5px;
+  
+}
+.buttonIncrease {
+  width: 100%;
+  margin-top: 10px;
+  display: block;
+  background-color: transparent;
+  border-radius: 10px;
+  border: 1px solid gray;
+  color: gray;
+  text-align: center;
+  padding: 15px;
+  }
+
+.buttonIncrease:hover {
+  border: 1px skyblue solid;
+  background-color: transparent;
+  color: gray;
+}
+.buttonIncrease:focus {
+  border: 1px #87ceeb solid;
+  background-color: transparent;
+  color: gray;
+}
+.cds--progress-step svg {
+  display: none;
+}
+.progressBarContainer {
+  margin-top: 10px;
+  padding: 5px;
+}
+.formBody {
+ border-bottom: 1px solid gray;
+ padding-right:1rem;
+ padding-left: 1rem;
+}
+.cds--modal-content {
+  padding-right: 0;
+  padding-left: 0;
+}
+.buttonNext {
+  display: flex;
+  justify-content: flex-end;
+  padding: 15px;
+}
+.progressBarText {
+ margin-top: 5px;
+}
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
