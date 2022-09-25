@@ -184,3 +184,18 @@ p {
   font-weight: 700;
   color: black;
 }
+.cds--text-input:hover  {
+  border: 1px skyblue solid;
+  outline: none;
+ 
+
+}
+.cds--text-input:focus  {
+  border: 1px skyblue solid;
+  outline: none;
+  
+
+}
+.cds--text-input {
+  border: 1px gray solid;
+}

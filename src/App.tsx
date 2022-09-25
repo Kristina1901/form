@@ -39,9 +39,7 @@ function App() {
                 style={{
                   marginBottom: "3rem",
                   borderRadius: "10px",
-                  borderBottom: "none",
-                  outline: "1px skyblue solid",
-                }}
+                 }}
               />
               <TextInput
                 data-modal-primary-focus
@@ -50,8 +48,7 @@ function App() {
                 style={{
                   marginBottom: "1rem",
                   borderRadius: "10px",
-                  borderBottom: "none",
-                  outline: "1px skyblue solid",
+                                
                  }}
               />
               <div className="tooltipContainer">
