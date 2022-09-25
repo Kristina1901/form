@@ -4,56 +4,19 @@
 
 // Preferred: bring in the styles for one component
 @use 'carbon-components-react/scss/components/button';
-.App {
-  text-align: center;
-}
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 .text {
   border-radius: 5px;
 }
 .button {
-  position: relative;
-  bottom: 82px;
-  left: 195px;
   border: none;
   border-radius: 50px;
   background-color: gray;
   color: white;
   width: 17px;
   height: 17px;
+  margin-left: 5px;
  
 
 }
@@ -66,14 +29,17 @@
     border-radius: 4px;
     position: absolute;
     z-index: 1;
-    bottom: 80px;
-    left: 220px;
+    bottom: 0px;
+    left: 95px;
 }
 .button:hover + .tooltipe {
   visibility: visible;
 }
 .tooltipContainer {
   position: relative;
+  bottom: 82px;
+  left: 140px;
+  width: 300px;
 }
 .timeFrameContainer {
   display: flex;
@@ -91,6 +57,7 @@
 .notSet {
   margin-top: 5px;
   color: skyblue;
+  font-weight: 700;
 }
 .cds--select-input:hover {
   outline: 1px skyblue solid;
@@ -162,7 +129,7 @@
   border: 1px solid gray;
   color: gray;
   text-align: center;
-  padding: 15px;
+  font-size: 25px;
   }
 
 .buttonIncrease:hover {
@@ -203,5 +170,17 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 10px;
+  
+}
+.cds--label {
+  font-weight: 700;
+  color: black;
+} 
+span {
+  font-weight: 700;
+  color: black;
+}
+p {
+  font-weight: 700;
+  color: black;
 }

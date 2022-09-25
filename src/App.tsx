@@ -46,7 +46,7 @@ function App() {
               <TextInput
                 data-modal-primary-focus
                 id="text-input-1"
-                labelText="Add a short description (optional)"
+                labelText="Add a short description"
                 style={{
                   marginBottom: "1rem",
                   borderRadius: "10px",
@@ -55,14 +55,15 @@ function App() {
                  }}
               />
               <div className="tooltipContainer">
-                <button data-tip data-for="information" className="button">
+               (optional)
+                <button data-tip data-for="information" type="button" className="button">
                   i
                 </button>
                 <span className="tooltipe">Maximum 30 characters.</span>
               </div>
               <div className="timeFrameContainer">
                 <div className="textContainer">
-                  <p>Timeframe</p>
+                  <p className="timeframe">Timeframe</p>
                   <p className="notSet">Not set</p>
                 </div>
                 <Select
@@ -110,6 +111,8 @@ function App() {
                   maxCompleted={200}
                   bgColor={"#87ceeb"}
                   isLabelVisible={false}
+                  height={'10px'}
+                  borderRadius={'5px'}
                 />
                 <p className="progressBarText">You're a third of the way there already! Keep going</p>
               </div>
